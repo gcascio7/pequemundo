@@ -1,0 +1,440 @@
+/* PROYECTO*/
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-image: linear-gradient(to left, #2eb8e6, white, #DBF56C);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: stretch;
+  height: 100vh; }
+
+header {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-family: "Gemunu Libre";
+  width: 100%;
+  position: sticky; }
+  header p {
+    text-transform: capitalize;
+    word-spacing: 8px;
+    text-align: center;
+    padding-bottom: 40px;
+    animation-name: aparecer;
+    animation-duration: 3s; }
+
+#logo {
+  width: 100px; }
+
+h1 {
+  text-align: left;
+  letter-spacing: 8px;
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  animation-name: aparecer;
+  animation-duration: 3s; }
+
+form {
+  width: 50vh;
+  margin: 20px; }
+  form legend {
+    color: black;
+    padding: 5px;
+    font-size: 25PX; }
+
+footer {
+  color: #2eb8e6;
+  background-color: white;
+  font-family: "Gemunu Libre";
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  position: relative; }
+
+h2 {
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 38px; }
+
+article img {
+  border-top: solid 5px honeydew;
+  border-bottom: solid 5px honeydew;
+  width: 25vh; }
+
+video {
+  width: 50vh;
+  height: 30vh; }
+
+#cards {
+  text-align: center;
+  display: flex; }
+
+#cards h5 {
+  font-size: 12px; }
+
+/* class */
+.normal {
+  line-height: 1.5;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Gemunu Libre";
+  text-align: justify;
+  font-size: 20px;
+  padding: 20px 30px; }
+
+.cursivaNegrita {
+  font-style: italic;
+  font-weight: bold; }
+
+.formulario {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; }
+
+/*
+.fondoCdlp{
+    background-color: #00000054;
+    padding-bottom:10px;
+    text-align: left;
+    padding-right: 30px;
+    background-image: url(../img/jbj.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: solid 15px black;
+}*/
+.aInicio {
+  color: black;
+  width: 80px;
+  margin-left: 15px;
+  float: left; }
+
+.img {
+  background-color: #2eb8e6;
+  padding: 5px;
+  border-radius: 10px;
+  border: groove 4px black;
+  margin: 10px;
+  width: 25vh; }
+
+.menuDespegable {
+  background-color: #030b0e;
+  z-index: 2; }
+
+.wp {
+  height: 60px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px; }
+
+.logos {
+  width: 60px; }
+
+.imgCdlp {
+  background-color: #2eb8e6;
+  padding: 10px;
+  border-radius: 10px;
+  border: groove 4px black;
+  margin: 20px; }
+
+.flex1 {
+  flex: 1;
+  margin-left: 5%;
+  margin-top: 20px; }
+
+.textos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap; }
+
+.textos1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap; }
+
+.imgAct {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/*tablet*/
+@media (min-width: 600px) and (max-width: 1023px) {
+  #logo {
+    width: 125px; }
+  h1 {
+    text-align: left;
+    letter-spacing: 8px;
+    display: inline-block;
+    padding: 10px;
+    padding-left: 40px;
+    margin: 10px;
+    font-size: 60px; }
+  header p {
+    text-transform: capitalize;
+    word-spacing: 8px;
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 20px; }
+  footer {
+    color: #2eb8e6;
+    background-color: white;
+    font-family: "Gemunu Libre";
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: NOwrap;
+    justify-content: space-between;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    position: relative; }
+    footer p {
+      position: absolute;
+      left: 40%; }
+    footer div {
+      float: right; }
+  #cards h5 {
+    font-size: 20px; }
+  video {
+    width: 70vh;
+    height: 40vh; }
+  /* .fondoCdlp{
+        background-color: #2eb8e654;
+        padding-bottom:10px;
+        text-align: right;
+        padding-right: 30px;
+        height: 30vh;
+        background-image: url(../img/jbj.jpg) ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-bottom: solid 15px black;
+    }*/
+  .wp {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 120px;
+    right: 10px; }
+  .logos {
+    width: 50px; }
+  .aInicio {
+    width: 80px; }
+  .img {
+    background-color: #2eb8e6;
+    padding: 10px;
+    width: 400px;
+    border-radius: 10px;
+    border: groove 4px black;
+    margin: 20px; }
+  .textos1 {
+    display: block; }
+  #cards {
+    margin: 10px;
+    padding: 10px;
+    background-color: #000; }
+  #cards div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+  #secciones {
+    background-image: linear-gradient(to right, #2eb8e6, white, #DBF56C);
+    border: groove 5px;
+    border-radius: 50px;
+    text-align: justify;
+    padding: 10px;
+    margin: 10px;
+    height: 70px;
+    width: 300px;
+    overflow: hidden;
+    transition: 1s; }
+  #secciones:hover {
+    width: 95%;
+    height: 40%; }
+  #secciones h2 {
+    text-align: left;
+    padding-left: 20px;
+    text-decoration: none; }
+  #secciones img {
+    background-color: #2eb8e6;
+    padding: 10px;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    border: groove 4px black;
+    text-align: center;
+    margin-left: 15%;
+    margin-top: 20px;
+    display: inline-block; }
+  #juve {
+    background-image: linear-gradient(to right, #2eb8e6, white, #DBF56C);
+    border: groove 5px;
+    border-radius: 50px;
+    text-align: justify;
+    padding: 10px;
+    margin: 10px;
+    height: 70px;
+    width: 300px;
+    overflow: hidden;
+    transition: 1s; }
+  #juve:hover {
+    width: 95%;
+    height: 38%; }
+  #juve h2 {
+    text-align: left;
+    padding-left: 20px;
+    text-decoration: none; }
+  #juve img {
+    background-color: #2eb8e6;
+    padding: 10px;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    border: groove 4px black;
+    text-align: center;
+    margin-left: 15%;
+    margin-top: 20px;
+    display: inline-block; }
+  #preju {
+    background-image: linear-gradient(to right, #2eb8e6, white, #DBF56C);
+    border: groove 5px;
+    border-radius: 50px;
+    text-align: justify;
+    padding: 10px;
+    margin: 10px;
+    height: 70px;
+    width: 300px;
+    overflow: hidden;
+    transition: 1s; }
+  #preju:hover {
+    width: 95%;
+    height: 40%; }
+  #preju h2 {
+    text-align: left;
+    padding-left: 20px;
+    text-decoration: none; }
+  #preju img {
+    background-color: #2eb8e6;
+    padding: 10px;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    border: groove 4px black;
+    text-align: center;
+    margin-left: 15%;
+    margin-top: 20px;
+    display: inline-block; } }
+
+/*desktop*/
+@media (min-width: 1024px) {
+  #logo {
+    width: 125px; }
+  h1 {
+    text-align: left;
+    letter-spacing: 8px;
+    display: inline-block;
+    padding: 10px;
+    padding-left: 40px;
+    margin: 10px;
+    font-size: 90px; }
+  header {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: "Gemunu Libre";
+    width: 100%;
+    position: sticky; }
+  header p {
+    text-transform: capitalize;
+    word-spacing: 8px;
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 20px; }
+  footer {
+    color: #2eb8e6;
+    background-color: white;
+    font-family: "Gemunu Libre";
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-top: black solid 10px; }
+  footer p {
+    position: absolute;
+    left: 45%; }
+  ul li a:hover {
+    background-color: #DBF56C;
+    padding: 4px;
+    border: solid black;
+    color: black !important; }
+  video {
+    width: 110vh;
+    height: 70vh; }
+  /*.fondoCdlp{
+        background-color: #2eb8e654;
+        padding-bottom:10px;
+        text-align: right;
+        padding-right: 30px;
+        height: $alto*0.7;
+        background-image: url(../img/jbj.jpg) ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-bottom: solid 15px black;
+    }*/
+  .wp {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    bottom: 120px;
+    right: 10px;
+    z-index: 4; }
+  .logos {
+    width: 80px;
+    float: right; }
+  .img {
+    background-color: #2eb8e6;
+    padding: 10px;
+    width: 400px;
+    border-radius: 10px;
+    border: groove 4px black;
+    margin: 20px; }
+  .aInicio {
+    color: black;
+    width: 80px;
+    margin-left: 15px;
+    margin-right: 40px; }
+  article {
+    margin-left: 80px;
+    margin-right: 80px; }
+  #cards h5 {
+    font-size: 24px; }
+  #cards div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; } }

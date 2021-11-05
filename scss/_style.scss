@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-image: linear-gradient(to left,$celeste, white ,$amarillo);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: stretch;
+    height: $alto;
+}
+header{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255); 
+    font-size: 20px; 
+    font-family: "Gemunu Libre";
+    width: 100%;
+    position: sticky;
+    p{
+        text-transform: capitalize;
+        word-spacing: 8px;
+        text-align: center;
+        padding-bottom: 40px;
+        animation-name: aparecer;
+        animation-duration: 3s;    
+    }
+}
+ 
+#logo{
+    width: 100px;
+}
+h1{
+    text-align: left;
+    letter-spacing: 8px;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    animation-name: aparecer;
+    animation-duration: 3s;
+}
+form{
+    width: 50vh;
+    margin: 20px;
+    legend{
+        color: rgb(0, 0, 0);
+        padding: 5px;
+        font-size: 25PX;
+    }
+}
+
+footer{
+    color: $celeste; 
+    background-color: white;
+    font-family: "Gemunu Libre"; 
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+h2{
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 38px;
+}
+article img{
+    border-top: solid 5px honeydew;
+    border-bottom:solid 5px honeydew;
+    width: 25vh;
+}
+video{
+    width: 50vh;
+    height: $alto*0.3
+}
+#cards{
+    text-align: center;
+    display: flex;
+}
+#cards h5{
+    font-size: 12px;
+}
+/* class */
+.normal{ 
+   line-height: 1.5;
+   font-style: normal; 
+   font-weight: normal;
+   font-family: "Gemunu Libre";
+   text-align: justify;
+   font-size: 20px;
+   padding: 20px 30px;
+}
+.cursivaNegrita{
+    font-style: italic;  
+    font-weight: bold;
+}
+.formulario{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+ }
+ /*
+.fondoCdlp{
+    background-color: #00000054;
+    padding-bottom:10px;
+    text-align: left;
+    padding-right: 30px;
+    background-image: url(../img/jbj.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: solid 15px black;
+}*/
+.aInicio{
+    color: black;
+    width: 80px;    
+    margin-left: 15px;
+    float: left;
+}
+.img{
+    background-color: #2eb8e6;
+    padding: 5px;
+    border-radius: 10px;
+    border:groove 4px rgb(0, 0, 0);
+    margin: 10px;
+    width: 25vh;
+}
+.menuDespegable{
+    background-color: #030b0e;
+    z-index: 2;
+}
+.wp{
+    height: 60px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+.logos{
+    width: 60px ;
+}
+.imgCdlp{
+    background-color: $celeste;
+    padding: 10px;
+    border-radius: 10px;
+    border:groove 4px rgb(0, 0, 0);
+    margin: 20px;
+}
+
+.flex1{
+    flex: 1;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+.textos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.textos1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.imgAct{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+

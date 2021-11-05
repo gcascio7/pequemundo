@@ -1,0 +1,109 @@
+
+/*desktop*/
+@media (min-width: 1024px){
+    #logo{
+        width: 125px;
+    }
+    h1{
+        text-align: left;
+        letter-spacing: 8px;
+        display: inline-block;
+        padding: 10px;
+        padding-left: 40px;
+        margin: 10px;
+        font-size: 90px;
+    }
+    header{
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255); 
+        font-size: 20px; 
+        font-family: "Gemunu Libre";
+        width: 100%;
+        position: sticky;
+    }
+    header p{
+        text-transform: capitalize;
+        word-spacing: 8px;
+        text-align: center;
+        padding-bottom: 40px;
+        font-size: 20px
+    }
+    footer{
+        color: $celeste; 
+        background-color: white;
+        font-family: "Gemunu Libre"; 
+        font-size: 15px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        border-top: black solid 10px;
+    }
+    footer p{
+        position: absolute; 
+        left: 45%;
+       }
+    ul li a:hover {
+        background-color: $amarillo;
+        padding: 4px;
+        border: solid black;
+        color: black !important; 
+    }
+    video{
+        width: 110vh;
+        height: $alto*0.7
+    }
+     /*.fondoCdlp{
+        background-color: #2eb8e654;
+        padding-bottom:10px;
+        text-align: right;
+        padding-right: 30px;
+        height: $alto*0.7;
+        background-image: url(../img/jbj.jpg) ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-bottom: solid 15px black;
+    }*/
+    .wp{
+        @include tamanio(80px,80px);
+        position: fixed;
+        bottom: 120px;
+        right: 10px;
+        z-index: 4;
+}
+    .logos{
+        width: 80px ;
+        float: right;
+}
+    .img{
+        background-color: $celeste;
+        padding: 10px;
+        width: 400px;
+        border-radius: 10px;
+        border:groove 4px rgb(0, 0, 0);
+        margin: 20px;
+
+}
+    .aInicio{
+        color: black;
+        width: 80px;
+        margin-left: 15px;
+        margin-right: 40px;
+}
+    article{
+        margin-left: 80px;
+        margin-right: 80px;
+}
+    #cards h5{
+        font-size: 24px;
+}
+    #cards div div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+}
+}
+

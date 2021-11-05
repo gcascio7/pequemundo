@@ -1,0 +1,15 @@
+
+/* PROYECTO*/
+
+$alto: 100vh;
+$celeste: #2eb8e6;
+$amarillo: #DBF56C;
+
+@mixin tamanio ($ancho, $altura) {
+    width: $ancho;
+    height:$altura
+}
+
+@import "style";
+@import "tablet";
+@import "desktop"
