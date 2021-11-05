@@ -102,6 +102,9 @@ video {
   justify-content: space-around;
   align-items: center; }
 
+.comentarioNor {
+  display: none; }
+
 /*
 .fondoCdlp{
     background-color: #00000054;
@@ -225,6 +228,8 @@ video {
   video {
     width: 70vh;
     height: 40vh; }
+  .comentarioCel {
+    display: none; }
   /* .fondoCdlp{
         background-color: #2eb8e654;
         padding-bottom:10px;
@@ -400,6 +405,8 @@ video {
   video {
     width: 110vh;
     height: 70vh; }
+  .comentarioCel {
+    display: none; }
   /*.fondoCdlp{
         background-color: #2eb8e654;
         padding-bottom:10px;
