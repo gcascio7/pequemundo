@@ -173,6 +173,9 @@ video {
   flex-wrap: wrap;
   justify-content: space-around; }
 
+.mapa {
+  width: 80vh; }
+
 @keyframes aparecer {
   0% {
     opacity: 0; }
@@ -183,6 +186,8 @@ video {
 @media (min-width: 600px) and (max-width: 1023px) {
   #logo {
     width: 125px; }
+  body {
+    height: 100%; }
   h1 {
     text-align: left;
     letter-spacing: 8px;
@@ -301,7 +306,7 @@ video {
     transition: 1s; }
   #juve:hover {
     width: 95%;
-    height: 38%; }
+    height: 42%; }
   #juve h2 {
     text-align: left;
     padding-left: 20px;
